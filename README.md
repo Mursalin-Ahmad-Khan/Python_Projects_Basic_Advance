@@ -5,7 +5,7 @@ A Streamlit-based web app that showcases a collection of Python projects — fro
 ## Demo / Live App
 
 You can access the live version of the app here:  
-[Python Projects (Basic → Advanced)](https://pythonprojectsbasicadvance-j7qmkf2qghkjplyqmtdwke.streamlit.app/) *(may require permissions / be under development)*
+[Python Project (Basic → BMI_Calculator)](https://pythonprojectsbasicadvance-j7qmkf2qghkjplyqmtdwke.streamlit.app/) *(may require permissions / be under development)*
 
 ## Features
 
