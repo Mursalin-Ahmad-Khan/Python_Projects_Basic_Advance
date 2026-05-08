@@ -17,9 +17,9 @@ col1, col2, col3 = st.columns(3)
 with col1:
     feet = st.number_input("Height (feet):", min_value=1, max_value=8, value=5)
 with col2:
-    inches = st.number_input("Height (inches):", min_value=0, max_value=11, value=7)
+    inches = st.number_input("Height (inches):", min_value=0, max_value=12, value=7)
 with col3:
-    weight = st.number_input("Weight (kg):", min_value=1.0, max_value=300.0, value=70.0)
+    weight = st.float_input("Weight (kg):", min_value=1, max_value=120, value=70.0)
 
 # Calculate BMI Button 
 if st.button("Calculate BMI"):
