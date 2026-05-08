@@ -19,7 +19,7 @@ with col1:
 with col2:
     inches = st.number_input("Height (inches):", min_value=0, max_value=12, value=7)
 with col3:
-    weight = st.number_input("Weight (kg):", min_value=1, max_value=120, value=70.0)
+    weight = st.number_input("Weight (kg):", min_value=1.0, max_value=120.0, value=70.0)
 
 # Calculate BMI Button 
 if st.button("Calculate BMI"):
@@ -45,7 +45,7 @@ if st.button("Calculate BMI"):
     min_weight = 18.5 * (height_m ** 2)
     max_weight = 24.9 * (height_m ** 2)
 
-    #  Display Results
+    #  Display Resultsz
     st.markdown("---")
     st.subheader(f"Result for {name or 'User'}:")
     st.metric(label="💪 Your BMI", value=f"{bmi:.2f}", delta=None)
