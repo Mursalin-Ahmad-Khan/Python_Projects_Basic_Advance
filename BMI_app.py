@@ -37,7 +37,7 @@ with col3:
         min_value=1.0,
         max_value=120.0,
         value=70.0,
-        step=0.1
+        step=0.2
     )
 
 # Calculate BMI Button 
