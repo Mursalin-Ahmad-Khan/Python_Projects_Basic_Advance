@@ -11,7 +11,20 @@ st.write("Calculate your Body Mass Index (BMI) using height in feet/inches and w
 
 # User Input
 name = st.text_input("👤 Enter your name:")
-age = st.number_input("🎂 Enter your age:", min_value=1,max_value=120,value=25)
+# Age input (max 3 digits)
+age_input = st.text_input("🎂 Enter your age:", max_chars=3)
+
+# Validate
+if age_input:
+    if age_input.isdigit():
+        age = int(age_input)
+
+        if 1 <= age <= 120:
+            st.success(f"Valid age: {age}")
+        else:
+            st.error("Age must be between 1 and 120")
+    else:
+        st.error("Only numbers are allowed")
 gender = st.radio("🧬 Select your gender:",("Male", "Female")
                  )
 
