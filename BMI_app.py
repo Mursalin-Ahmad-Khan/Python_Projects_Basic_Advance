@@ -8,8 +8,8 @@ st.set_page_config(page_title="BMI" , page_icon="⚖️", layout="centered")
 st.title("⚖️ BMI Calculator ")
 st.write("Calculate your Body Mass Index (BMI) using height in feet/inches and weight in kilograms.")
 
-with st.form("user_form"):
 
+# User Input
     name = st.text_input("👤 Enter your name:")
 
     age = st.number_input(
