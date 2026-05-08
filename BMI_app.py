@@ -8,10 +8,23 @@ st.set_page_config(page_title="BMI" , page_icon="⚖️", layout="centered")
 st.title("⚖️ BMI Calculator ")
 st.write("Calculate your Body Mass Index (BMI) using height in feet/inches and weight in kilograms.")
 
-# User Inputs 
-name = st.text_input("👤 Enter your name:")
-age = st.number_input("🎂 Enter your age:", min_value=1, max_value=120, value=25)
-gender = st.radio("🧬 Select your gender:", ("Male", "Female"))
+with st.form("user_form"):
+
+    name = st.text_input("👤 Enter your name:")
+
+    age = st.number_input(
+        "🎂 Enter your age:",
+        min_value=1,
+        max_value=120,
+        value=25
+    )
+
+    gender = st.radio(
+        "🧬 Select your gender:",
+        ("Male", "Female")
+    )
+
+    submitted = st.form_submit_button("Submit")
 
 col1, col2, col3 = st.columns(3)
 
