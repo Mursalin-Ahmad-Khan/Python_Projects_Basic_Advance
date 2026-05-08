@@ -14,12 +14,38 @@ age = st.number_input("🎂 Enter your age:", min_value=1, max_value=120, value=
 gender = st.radio("🧬 Select your gender:", ("Male", "Female"))
 
 col1, col2, col3 = st.columns(3)
+
 with col1:
-    feet = st.number_input("Height (feet):", min_value=1, max_value=8, value=5)
+    feet = st.number_input(
+        "Height (feet):",
+        min_value=1,
+        max_value=8,
+        value=5,
+        step=1
+    )
+
 with col2:
-    inches = st.number_input("Height (inches):", min_value=0, max_value=12, value=7)
+    inches = st.number_input(
+        "Height (inches):",
+        min_value=0,
+        max_value=11,
+        value=7,
+        step=1
+    )
+
 with col3:
-    weight = st.number_input("Weight (kg):", min_value=1.0, max_value=120.0, value=70.0)
+    weight = st.number_input(
+        "Weight (kg):",
+        min_value=1.0,
+        max_value=120.0,
+        value=70.0,
+        step=0.1,
+        format="%.3f"
+    )
+
+# Extra validation
+if weight > 120:
+    st.error("Weight cannot exceed 120 kg")
 
 # Calculate BMI Button 
 if st.button("Calculate BMI"):
