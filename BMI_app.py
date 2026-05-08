@@ -10,19 +10,10 @@ st.write("Calculate your Body Mass Index (BMI) using height in feet/inches and w
 
 
 # User Input
-    name = st.text_input("👤 Enter your name:")
-
-    age = st.number_input(
-        "🎂 Enter your age:",
-        min_value=1,
-        max_value=120,
-        value=25
-    )
-
-    gender = st.radio(
-        "🧬 Select your gender:",
-        ("Male", "Female")
-    )
+name = st.text_input("👤 Enter your name:")
+age = st.number_input("🎂 Enter your age:", min_value=1,max_value=120,value=25)
+gender = st.radio("🧬 Select your gender:",("Male", "Female")
+                 )
 
 col1, col2, col3 = st.columns(3)
 
