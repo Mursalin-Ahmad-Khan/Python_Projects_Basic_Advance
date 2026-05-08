@@ -24,8 +24,6 @@ with st.form("user_form"):
         ("Male", "Female")
     )
 
-    submitted = st.form_submit_button("Submit")
-
 col1, col2, col3 = st.columns(3)
 
 with col1:
